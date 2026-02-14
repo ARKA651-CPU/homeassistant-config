@@ -1,0 +1,149 @@
+2026-02-13 06:12:43.933 WARNING (SyncWorker_0) [homeassistant.loader] We found a custom integration hacs which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2026-02-13 06:12:50.420 WARNING (Recorder) [homeassistant.components.recorder.util] The system could not validate that the sqlite3 database at //config/home-assistant_v2.db was shutdown cleanly
+2026-02-13 06:12:50.537 WARNING (Recorder) [homeassistant.components.recorder.util] Ended unfinished session (id=53 from 2026-02-12 19:28:46.121758)
+2026-02-13 07:54:24.468 ERROR (MainThread) [frontend.js.modern.202601286] Uncaught error from Firefox 147.0 on Windows 10
+TypeError: can't access property "domain", i is undefined
+_keyFunction (src/panels/config/integrations/dialog-add-integration.ts:563:4)
+item (node_modules/@lit-labs/virtualizer/src/virtualize.ts:116:53)
+r (node_modules/lit-html/src/directives/repeat.ts:56:28)
+dt (node_modules/lit-html/src/directives/repeat.ts:93:52)
+update (node_modules/lit-html/src/directive.ts:135:16)
+_$AS (node_modules/lit-html/src/lit-html.ts:1179:23)
+M (node_modules/lit-html/src/lit-html.ts:1457:12)
+_$AI (node_modules/lit-html/src/async-directive.ts:366:18)
+setValue (node_modules/@lit-labs/virtualizer/src/virtualize.ts:139:13)
+dispatchEvent (node_modules/@lit-labs/virtualizer/src/Virtualizer.ts:816:23)
+2026-02-13 07:56:46.228 WARNING (MainThread) [homeassistant.components.go2rtc.server] 07:56:46.200 ERR github.com/AlexxIT/go2rtc/internal/webrtc/webrtc.go:224 > error="unable to populate media section, RTPSender created with no codecs"
+2026-02-13 07:57:04.854 WARNING (MainThread) [homeassistant.components.go2rtc.server] 07:57:04.852 ERR github.com/AlexxIT/go2rtc/internal/webrtc/webrtc.go:224 > error="unable to populate media section, RTPSender created with no codecs"
+2026-02-13 07:58:02.815 ERROR (MainThread) [homeassistant.components.websocket_api.http.connection] [281472334300640] Unexpected exception
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/websocket_api/commands.py", line 278, in handle_call_service
+    response = await hass.services.async_call(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/usr/src/homeassistant/homeassistant/core.py", line 2817, in async_call
+    response_data = await coro
+                    ^^^^^^^^^^
+  File "/usr/src/homeassistant/homeassistant/core.py", line 2860, in _execute_service
+    return await target(service_call)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/src/homeassistant/homeassistant/helpers/service.py", line 832, in entity_service_call
+    single_response = await _handle_entity_call(
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^
+        hass, entity, func, data, call.context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/src/homeassistant/homeassistant/helpers/service.py", line 904, in _handle_entity_call
+    result = await task
+             ^^^^^^^^^^
+  File "/usr/src/homeassistant/homeassistant/components/onvif/switch.py", line 107, in async_turn_off
+    await self.entity_description.turn_off_fn(self.device)(
+        profile, self.entity_description.turn_off_data
+    )
+  File "/usr/src/homeassistant/homeassistant/components/onvif/device.py", line 639, in async_run_aux_command
+    await ptz_service.SendAuxiliaryCommand(req)
+  File "/usr/local/lib/python3.13/site-packages/zeep/proxy.py", line 64, in __call__
+    return await self._proxy._binding.send_async(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+    )
+    ^
+  File "/usr/local/lib/python3.13/site-packages/zeep/wsdl/bindings/soap.py", line 164, in send_async
+    return self.process_reply(client, operation_obj, response)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/zeep/wsdl/bindings/soap.py", line 229, in process_reply
+    return self.process_error(doc, operation)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/zeep/wsdl/bindings/soap.py", line 391, in process_error
+    raise Fault(
+    ...<5 lines>...
+    )
+zeep.exceptions.Fault: Method 'ns0:SendAuxiliaryCommand' not implemented: method name or namespace not recognized
+2026-02-13 08:06:49.941 WARNING (MainThread) [homeassistant.helpers.translation] Failed to load integration for translation: Integration 'Солнце' not found.
+2026-02-13 09:21:12.120 WARNING (MainThread) [homeassistant.components.go2rtc.server] 09:21:12.119 ERR github.com/AlexxIT/go2rtc/internal/webrtc/webrtc.go:224 > error="unable to populate media section, RTPSender created with no codecs"
+2026-02-13 09:21:25.584 WARNING (MainThread) [homeassistant.components.go2rtc.server] 09:21:25.582 ERR github.com/AlexxIT/go2rtc/internal/webrtc/webrtc.go:224 > error="unable to populate media section, RTPSender created with no codecs"
+2026-02-13 09:23:07.884 WARNING (MainThread) [homeassistant.components.go2rtc.server] 09:23:07.882 ERR github.com/AlexxIT/go2rtc/internal/webrtc/webrtc.go:224 > error="unable to populate media section, RTPSender created with no codecs"
+2026-02-13 09:26:55.171 DEBUG (MainThread) [bellows.zigbee.application] Sending packet ZigbeePacket(timestamp=datetime.datetime(2026, 2, 13, 6, 26, 55, 170821, tzinfo=datetime.timezone.utc), priority=<PacketPriority.NORMAL: 0>, src=AddrModeAddress(addr_mode=<AddrMode.NWK: 2>, address=0x0000), src_ep=0, dst=AddrModeAddress(addr_mode=<AddrMode.Broadcast: 15>, address=<BroadcastAddress.ALL_ROUTERS_AND_COORDINATOR: 65532>), dst_ep=0, source_route=None, extended_timeout=False, tsn=4, profile_id=0, cluster_id=<ZDOCmd.Mgmt_Permit_Joining_req: 54>, data=Serialized[b'\x04\xfe\x00'], tx_options=<TransmitOptions.NONE: 0>, radius=0, non_member_radius=0, lqi=None, rssi=None)
+2026-02-13 09:26:55.175 DEBUG (MainThread) [bellows.ezsp.protocol] Sending command  sendBroadcast: () {'destination': <BroadcastAddress.ALL_ROUTERS_AND_COORDINATOR: 65532>, 'apsFrame': EmberApsFrame(profileId=0, clusterId=54, sourceEndpoint=0, destinationEndpoint=0, options=<EmberApsOption.APS_OPTION_ENABLE_ROUTE_DISCOVERY: 256>, groupId=0, sequence=4), 'radius': 0, 'messageTag': 5, 'messageContents': b'\x04\xfe\x00'}
+2026-02-13 09:26:55.186 DEBUG (MainThread) [bellows.ezsp.protocol] Send semaphore is locked, delaying before sending importTransientKey((), {'eui64': ff:ff:ff:ff:ff:ff:ff:ff, 'plaintext_key': 5a:69:67:42:65:65:41:6c:6c:69:61:6e:63:65:30:39, 'flags': <SecurityManagerContextFlags.NONE: 0>})
+2026-02-13 09:26:55.189 DEBUG (bellows.thread_0) [bellows.ash] Sending frame DataFrame(frm_num=3, re_tx=False, ack_num=2, ezsp_frame=b'\x9a\x00\x016\x00\xfc\xff\x00\x006\x00\x00\x00\x00\x01\x00\x00\x04\x00\x05\x03\x04\xfe\x00') FLAG
+2026-02-13 09:26:55.189 DEBUG (bellows.thread_0) [bellows.ash] Sending data  32d821a9622ae94d59947c25aa5592489c4e23abe8cd6375fd66457e
+2026-02-13 09:26:55.198 DEBUG (bellows.thread_0) [bellows.ash] Received data 24d8a1a9622a15319e217e
+2026-02-13 09:26:55.198 DEBUG (bellows.thread_0) [bellows.ash] Received frame DataFrame(frm_num=2, re_tx=0, ack_num=4, ezsp_frame=b'\x9a\x80\x016\x00\x00\x83')
+2026-02-13 09:26:55.202 DEBUG (bellows.thread_0) [bellows.ash] Sending frame AckFrame(res=0, ncp_ready=0, ack_num=3) FLAG
+2026-02-13 09:26:55.202 DEBUG (bellows.thread_0) [bellows.ash] Sending data  83401b7e
+2026-02-13 09:26:55.204 DEBUG (bellows.thread_0) [bellows.ash] Received data 34d8b5a94d2a89626b7e
+2026-02-13 09:26:55.205 DEBUG (bellows.thread_0) [bellows.ash] Received frame DataFrame(frm_num=3, re_tx=0, ack_num=4, ezsp_frame=b'\x9a\x94\x01\x19\x00\x9c')
+2026-02-13 09:26:55.205 DEBUG (bellows.thread_0) [bellows.ash] Sending frame AckFrame(res=0, ncp_ready=0, ack_num=4) FLAG
+2026-02-13 09:26:55.206 DEBUG (bellows.thread_0) [bellows.ash] Sending data  8430fc7e
+2026-02-13 09:26:55.207 DEBUG (MainThread) [bellows.ezsp.protocol] Received command sendBroadcast: {'status': <EmberStatus.SUCCESS: 0>, 'sequence': 131}
+2026-02-13 09:26:55.207 DEBUG (MainThread) [bellows.ezsp.protocol] Received command stackStatusHandler: {'status': <EmberStatus.NETWORK_OPENED: 156>}
+2026-02-13 09:26:55.208 DEBUG (MainThread) [bellows.zigbee.application] Received stackStatusHandler frame with [<EmberStatus.NETWORK_OPENED: 156>]
+2026-02-13 09:26:55.209 DEBUG (bellows.thread_0) [bellows.ash] Received data 44d8b1a97d312a10b259a24a25aa5593499ccdd8abedce9874fec29d8960fa7e
+2026-02-13 09:26:55.210 DEBUG (bellows.thread_0) [bellows.ash] Received frame DataFrame(frm_num=4, re_tx=0, ack_num=4, ezsp_frame=b'\x9a\x90\x01E\x00\x05\x00\x006\x00\x00\x00\x00\x01\x00\x00\x83\xff\x00\x00\x00\xff\xff\x03\x04\xfe\x00')
+2026-02-13 09:26:55.210 DEBUG (bellows.thread_0) [bellows.ash] Sending frame AckFrame(res=0, ncp_ready=0, ack_num=5) FLAG
+2026-02-13 09:26:55.210 DEBUG (bellows.thread_0) [bellows.ash] Sending data  8520dd7e
+2026-02-13 09:26:55.213 DEBUG (MainThread) [bellows.ezsp.protocol] Received command incomingMessageHandler: {'type': <EmberIncomingMessageType.INCOMING_BROADCAST_LOOPBACK: 5>, 'apsFrame': EmberApsFrame(profileId=0, clusterId=54, sourceEndpoint=0, destinationEndpoint=0, options=<EmberApsOption.APS_OPTION_ENABLE_ROUTE_DISCOVERY: 256>, groupId=0, sequence=131), 'lastHopLqi': 255, 'lastHopRssi': 0, 'sender': 0x0000, 'bindingIndex': 255, 'addressIndex': 255, 'messageContents': b'\x04\xfe\x00'}
+2026-02-13 09:26:55.214 DEBUG (MainThread) [bellows.zigbee.application] Received incomingMessageHandler frame with [<EmberIncomingMessageType.INCOMING_BROADCAST_LOOPBACK: 5>, EmberApsFrame(profileId=0, clusterId=54, sourceEndpoint=0, destinationEndpoint=0, options=<EmberApsOption.APS_OPTION_ENABLE_ROUTE_DISCOVERY: 256>, groupId=0, sequence=131), 255, 0, 0x0000, 255, 255, b'\x04\xfe\x00']
+2026-02-13 09:26:55.215 DEBUG (MainThread) [bellows.zigbee.application] Ignoring message type: <EmberIncomingMessageType.INCOMING_BROADCAST_LOOPBACK: 5>
+2026-02-13 09:26:55.221 DEBUG (MainThread) [bellows.ezsp.protocol] Send semaphore is locked, delaying before sending permitJoining((254,), {})
+2026-02-13 09:26:55.222 DEBUG (MainThread) [bellows.ezsp.protocol] Sending command  importTransientKey: () {'eui64': ff:ff:ff:ff:ff:ff:ff:ff, 'plaintext_key': 5a:69:67:42:65:65:41:6c:6c:69:61:6e:63:65:30:39, 'flags': <SecurityManagerContextFlags.NONE: 0>} after 0.04s delay
+2026-02-13 09:26:55.225 DEBUG (bellows.thread_0) [bellows.ash] Sending frame DataFrame(frm_num=4, re_tx=False, ack_num=5, ezsp_frame=b'\x9b\x00\x01\x11\x01\xff\xff\xff\xff\xff\xff\xff\xffZigBeeAlliance09\x00') FLAG
+2026-02-13 09:26:55.226 DEBUG (bellows.thread_0) [bellows.ash] Sending data  45d921a9452bea4da66bb5da55aac820fb0c42ceaca20be29ca800eccc473fa47d317e
+2026-02-13 09:26:55.236 DEBUG (bellows.thread_0) [bellows.ash] Received data 55d9a1a9452b15b2599416487e
+2026-02-13 09:26:55.237 DEBUG (bellows.thread_0) [bellows.ash] Received frame DataFrame(frm_num=5, re_tx=0, ack_num=5, ezsp_frame=b'\x9b\x80\x01\x11\x01\x00\x00\x00\x00')
+2026-02-13 09:26:55.237 DEBUG (bellows.thread_0) [bellows.ash] Sending frame AckFrame(res=0, ncp_ready=0, ack_num=6) FLAG
+2026-02-13 09:26:55.237 DEBUG (bellows.thread_0) [bellows.ash] Sending data  8610be7e
+2026-02-13 09:26:55.240 DEBUG (MainThread) [bellows.ezsp.protocol] Received command importTransientKey: {'status': <sl_Status.OK: 0>}
+2026-02-13 09:26:55.242 DEBUG (MainThread) [bellows.ezsp.protocol] Send semaphore is locked, delaying before sending setPolicy((), {'policyId': <EzspPolicyId.TRUST_CENTER_POLICY: 0>, 'decisionId': <EzspDecisionBitmask.ALLOW_JOINS|ALLOW_UNSECURED_REJOINS: 3>})
+2026-02-13 09:26:55.243 DEBUG (MainThread) [bellows.ezsp.protocol] Sending command  permitJoining: (254,) {} after 0.02s delay
+2026-02-13 09:26:55.246 DEBUG (bellows.thread_0) [bellows.ash] Sending frame DataFrame(frm_num=5, re_tx=False, ack_num=6, ezsp_frame=b'\x9c\x00\x01"\x00\xfe') FLAG
+2026-02-13 09:26:55.246 DEBUG (bellows.thread_0) [bellows.ash] Sending data  56de21a9762aebea4f7e
+2026-02-13 09:26:55.252 DEBUG (bellows.thread_0) [bellows.ash] Received data 66dea1a9762a159fc37e
+2026-02-13 09:26:55.253 DEBUG (bellows.thread_0) [bellows.ash] Received frame DataFrame(frm_num=6, re_tx=0, ack_num=6, ezsp_frame=b'\x9c\x80\x01"\x00\x00')
+2026-02-13 09:26:55.253 DEBUG (bellows.thread_0) [bellows.ash] Sending frame AckFrame(res=0, ncp_ready=0, ack_num=7) FLAG
+2026-02-13 09:26:55.254 DEBUG (bellows.thread_0) [bellows.ash] Sending data  87009f7e
+2026-02-13 09:26:55.255 DEBUG (MainThread) [bellows.ezsp.protocol] Received command permitJoining: {'status': <EmberStatus.SUCCESS: 0>}
+2026-02-13 09:26:55.259 DEBUG (MainThread) [bellows.ezsp.protocol] Sending command  setPolicy: () {'policyId': <EzspPolicyId.TRUST_CENTER_POLICY: 0>, 'decisionId': <EzspDecisionBitmask.ALLOW_JOINS|ALLOW_UNSECURED_REJOINS: 3>} after 0.02s delay
+2026-02-13 09:26:55.262 DEBUG (bellows.thread_0) [bellows.ash] Sending frame DataFrame(frm_num=6, re_tx=False, ack_num=7, ezsp_frame=b'\x9d\x00\x01U\x00\x00\x03') FLAG
+2026-02-13 09:26:55.262 DEBUG (bellows.thread_0) [bellows.ash] Sending data  67df21a9012a15b13e667e
+2026-02-13 09:26:55.270 DEBUG (bellows.thread_0) [bellows.ash] Received data 77dfa1a9012a1508e17e
+2026-02-13 09:26:55.270 DEBUG (bellows.thread_0) [bellows.ash] Received frame DataFrame(frm_num=7, re_tx=0, ack_num=7, ezsp_frame=b'\x9d\x80\x01U\x00\x00')
+2026-02-13 09:26:55.271 DEBUG (bellows.thread_0) [bellows.ash] Sending frame AckFrame(res=0, ncp_ready=0, ack_num=0) FLAG
+2026-02-13 09:26:55.271 DEBUG (bellows.thread_0) [bellows.ash] Sending data  8070787e
+2026-02-13 09:26:55.274 DEBUG (MainThread) [bellows.ezsp.protocol] Received command setPolicy: {'status': <EzspStatus.SUCCESS: 0>}
+2026-02-13 09:26:56.164 DEBUG (bellows.thread_0) [bellows.ash] Received data 07dfb1a96b2a7d334ea6944a7d33aa5592499d4e2728e8ce679a317e
+2026-02-13 09:26:56.164 DEBUG (bellows.thread_0) [bellows.ash] Received frame DataFrame(frm_num=0, re_tx=0, ack_num=7, ezsp_frame=b'\x9d\x90\x01?\x00\x06\xfc\xff\x00\x006\x00\x00\x00\x00\x01\x00\x00\x83\x05\x00\x00')
+2026-02-13 09:26:56.165 DEBUG (bellows.thread_0) [bellows.ash] Sending frame AckFrame(res=0, ncp_ready=0, ack_num=1) FLAG
+2026-02-13 09:26:56.165 DEBUG (bellows.thread_0) [bellows.ash] Sending data  8160597e
+2026-02-13 09:26:56.168 DEBUG (MainThread) [bellows.ezsp.protocol] Received command messageSentHandler: {'type': <EmberOutgoingMessageType.OUTGOING_BROADCAST: 6>, 'indexOrDestination': 65532, 'apsFrame': EmberApsFrame(profileId=0, clusterId=54, sourceEndpoint=0, destinationEndpoint=0, options=<EmberApsOption.APS_OPTION_ENABLE_ROUTE_DISCOVERY: 256>, groupId=0, sequence=131), 'messageTag': 5, 'status': <EmberStatus.SUCCESS: 0>, 'messageContents': b''}
+2026-02-13 09:26:56.169 DEBUG (MainThread) [bellows.zigbee.application] Received messageSentHandler frame with [<EmberOutgoingMessageType.OUTGOING_BROADCAST: 6>, 65532, EmberApsFrame(profileId=0, clusterId=54, sourceEndpoint=0, destinationEndpoint=0, options=<EmberApsOption.APS_OPTION_ENABLE_ROUTE_DISCOVERY: 256>, groupId=0, sequence=131), 5, <EmberStatus.SUCCESS: 0>, b'']
+2026-02-13 09:26:56.169 DEBUG (MainThread) [bellows.zigbee.application] Unexpected message send notification tag: (65532, 5)
+2026-02-13 09:26:56.257 DEBUG (MainThread) [zha.decorators] [<Task pending name='device-availability-checker_DeviceAvailabilityChecker' coro=<periodic.<locals>.scheduler.<locals>.wrapper() running at /usr/local/lib/python3.13/site-packages/zha/decorators.py:78> cb=[set.remove()]>] executing periodic task [zha.application.helpers::DeviceAvailabilityChecker.check_device_availability]
+2026-02-13 09:26:56.258 DEBUG (MainThread) [zha.application.helpers] Device availability checker interval starting
+2026-02-13 09:26:56.258 DEBUG (MainThread) [zha.application.helpers] Checking device availability
+2026-02-13 09:26:56.258 DEBUG (MainThread) [zha.application.helpers] Device availability checker interval finished
+2026-02-13 09:26:59.550 DEBUG (MainThread) [zigpy.application] Feeding watchdog
+2026-02-13 09:26:59.551 DEBUG (MainThread) [bellows.ezsp.protocol] Sending command  readCounters: () {}
+2026-02-13 09:26:59.554 DEBUG (bellows.thread_0) [bellows.ash] Sending frame DataFrame(frm_num=7, re_tx=False, ack_num=1, ezsp_frame=b'\x9e\x00\x01\xf1\x00') FLAG
+2026-02-13 09:26:59.555 DEBUG (bellows.thread_0) [bellows.ash] Sending data  71dc21a9a52ab7b17e
+2026-02-13 09:26:59.571 DEBUG (bellows.thread_0) [bellows.ash] Received data 10dca1a9a52a15b26a944a25aa5592499c4e26abecce678bfdc66389fc7d5e3fa7ebcdde6f8fffc7dbd5d2698c4623a9ec763ba5ea758241984c267d33b1e070381c0e07bbe5ca658a459a4d9e4f9ff7c3d9d46a35a251904824c8b77e
+2026-02-13 09:26:59.571 DEBUG (bellows.thread_0) [bellows.ash] Received frame DataFrame(frm_num=1, re_tx=0, ack_num=0, ezsp_frame=b'\x9e\x80\x01\xf1\x00\x00\x003\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00')
+2026-02-13 09:26:59.572 DEBUG (bellows.thread_0) [bellows.ash] Sending frame AckFrame(res=0, ncp_ready=0, ack_num=2) FLAG
+2026-02-13 09:26:59.572 DEBUG (bellows.thread_0) [bellows.ash] Sending data  82503a7e
+2026-02-13 09:26:59.576 DEBUG (MainThread) [bellows.ezsp.protocol] Received command readCounters: {'values': [0, 51, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]}
+2026-02-13 09:26:59.578 DEBUG (MainThread) [bellows.ezsp.protocol] Sending command  getValue: () {'valueId': <EzspValueId.VALUE_FREE_BUFFERS: 3>}
+2026-02-13 09:26:59.582 DEBUG (bellows.thread_0) [bellows.ash] Sending frame DataFrame(frm_num=0, re_tx=False, ack_num=2, ezsp_frame=b'\x9f\x00\x01\xaa\x00\x03') FLAG
+2026-02-13 09:26:59.583 DEBUG (bellows.thread_0) [bellows.ash] Sending data  02dd21a9fe2a16a3b77e
+2026-02-13 09:26:59.598 DEBUG (bellows.thread_0) [bellows.ash] Received data 21dda1a9fe2a15b3a239f67e
+2026-02-13 09:26:59.598 DEBUG (bellows.thread_0) [bellows.ash] Received frame DataFrame(frm_num=2, re_tx=0, ack_num=1, ezsp_frame=b'\x9f\x80\x01\xaa\x00\x00\x01\xfb')
+2026-02-13 09:26:59.599 DEBUG (bellows.thread_0) [bellows.ash] Sending frame AckFrame(res=0, ncp_ready=0, ack_num=3) FLAG
+2026-02-13 09:26:59.599 DEBUG (bellows.thread_0) [bellows.ash] Sending data  83401b7e
+2026-02-13 09:26:59.604 DEBUG (MainThread) [bellows.ezsp.protocol] Received command getValue: {'status': <EzspStatus.SUCCESS: 0>, 'value': b'\xfb'}
+2026-02-13 09:26:59.611 DEBUG (MainThread) [bellows.zigbee.application] Free buffers status EzspStatus.SUCCESS, value: 251
+2026-02-13 09:26:59.611 DEBUG (MainThread) [bellows.zigbee.application] ezsp_counters: [MAC_RX_BROADCAST = 0, MAC_TX_BROADCAST = 739, MAC_RX_UNICAST = 0, MAC_TX_UNICAST_SUCCESS = 0, MAC_TX_UNICAST_RETRY = 0, MAC_TX_UNICAST_FAILED = 0, APS_DATA_RX_BROADCAST = 2, APS_DATA_TX_BROADCAST = 2, APS_DATA_RX_UNICAST = 2, APS_DATA_TX_UNICAST_SUCCESS = 1, APS_DATA_TX_UNICAST_RETRY = 0, APS_DATA_TX_UNICAST_FAILED = 0, ROUTE_DISCOVERY_INITIATED = 0, NEIGHBOR_ADDED = 0, NEIGHBOR_REMOVED = 0, NEIGHBOR_STALE = 0, JOIN_INDICATION = 0, CHILD_REMOVED = 0, ASH_OVERFLOW_ERROR = 0, ASH_FRAMING_ERROR = 0, ASH_OVERRUN_ERROR = 0, NWK_FRAME_COUNTER_FAILURE = 0, APS_FRAME_COUNTER_FAILURE = 0, UTILITY = 0, APS_LINK_KEY_NOT_AUTHORIZED = 0, NWK_DECRYPTION_FAILURE = 0, APS_DECRYPTION_FAILURE = 0, ALLOCATE_PACKET_BUFFER_FAILURE = 0, RELAYED_UNICAST = 0, PHY_TO_MAC_QUEUE_LIMIT_REACHED = 0, PACKET_VALIDATE_LIBRARY_DROPPED_COUNT = 0, TYPE_NWK_RETRY_OVERFLOW = 0, PHY_CCA_FAIL_COUNT = 3, BROADCAST_TABLE_FULL = 0, PTA_LO_PRI_REQUESTED = 0, PTA_HI_PRI_REQUESTED = 0, PTA_LO_PRI_DENIED = 0, PTA_HI_PRI_DENIED = 0, PTA_LO_PRI_TX_ABORTED = 0, PTA_HI_PRI_TX_ABORTED = 0, ADDRESS_CONFLICT_SENT = 0, EZSP_FREE_BUFFERS = 251]
+2026-02-13 11:17:18.345 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for testi @ 192.168.1.71: Error connecting to [AddrInfo(family=<AddressFamily.AF_INET: 2>, type=<SocketKind.SOCK_STREAM: 1>, proto=6, sockaddr=IPv4Sockaddr(address='192.168.1.71', port=6053))]: [Errno 113] Connect call failed ('192.168.1.71', 6053) (SocketAPIError)
+2026-02-13 11:38:43.785 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for testi @ 192.168.1.71: Error connecting to [AddrInfo(family=<AddressFamily.AF_INET: 2>, type=<SocketKind.SOCK_STREAM: 1>, proto=6, sockaddr=IPv4Sockaddr(address='192.168.1.71', port=6053))]: [Errno 113] Connect call failed ('192.168.1.71', 6053) (SocketAPIError)

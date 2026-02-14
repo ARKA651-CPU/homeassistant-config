@@ -1,0 +1,20 @@
+homeassistant:
+  enabled: true
+mqtt:
+  base_topic: zigbee2mqtt
+  server: mqtt://192.168.1.103:1883
+  user: homeassistant
+  password: mqtt
+  client_id: zigbee
+serial:
+  port: /dev/ttyACM0
+  adapter: ezsp
+  boudrate: 115200
+  rtscts:  false
+frontend:
+  enabled: true
+  port: 8080
+advanced:
+  homeassistant_legacy_entity_attributes: false
+
+version: 5

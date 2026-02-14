@@ -1,0 +1,63 @@
+title: Мой дом
+views:
+  - title: Климат
+    cards:
+      - type: custom:apexcharts-card
+        header:
+          title: Температура 🌡️
+          show: true
+        graph_span: 24h
+        span:
+          start: day
+        show:
+          last_updated: true
+        series:
+          - entity: sensor.testi_dht22_temperature
+            name: Комната
+            type: area
+            stroke_width: 4
+            color: '#ff0000'
+            show:
+              legend_value: true
+              extremas: true
+        apex_config:
+          chart:
+            height: 300
+          stroke:
+            curve: smooth
+          fill:
+            type: gradient
+            gradient:
+              shadeIntensity: 1
+              opacityFrom: 0.6
+              opacityTo: 0.1
+
+      - type: custom:apexcharts-card
+        header:
+          title: Влажность 💧
+          show: true
+        graph_span: 24h
+        span:
+          start: day
+        show:
+          last_updated: true
+        series:
+          - entity: sensor.testi_dht22_humidity
+            name: Влажность
+            type: area
+            stroke_width: 4
+            color: '#0066ff'
+            show:
+              legend_value: true
+              extremas: true
+        apex_config:
+          chart:
+            height: 300
+          stroke:
+            curve: smooth
+          fill:
+            type: gradient
+            gradient:
+              shadeIntensity: 1
+              opacityFrom: 0.6
+              opacityTo: 0.1

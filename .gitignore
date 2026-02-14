@@ -1,0 +1,17 @@
+# Секреты и токены
+secrets.yaml
+*.token
+*.key
+.storage/
+.cloud/
+
+# Базы данных
+*.db
+*.db-journal
+
+# Логи
+*.log
+
+# Кэш
+__pycache__/
+*.pyc
